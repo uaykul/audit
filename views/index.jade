@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  include ./header
+  h1= title
+  p Welcome to #{title}
+  div
+    p template engine
+    h1 Its a sample of #{title}
+  div(id="myDiv", class="container") Its a element of attribute!!! 
+  a(href="http://www.kuantumsiberguvenlik.com.tr", target="_new") Official WebSite Kuantum
+
+block footer
+    div(id="footer") Footer Part
